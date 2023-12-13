@@ -21,9 +21,15 @@
     <ClCompile Include="ex2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ex1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ex2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ex1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

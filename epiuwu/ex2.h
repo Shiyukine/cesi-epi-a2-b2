@@ -13,11 +13,11 @@ public:
 class B : public A
 {
 public:
-	void afficher();
+	void afficher() override;
 };
 
 class C : public A
 {
 public:
-	void afficher();
+	void afficher() override;
 };

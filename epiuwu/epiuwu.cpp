@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "ex2.h"
+#include "ex1.h"
 
 void afficherObjet(A* obj)
 {
@@ -11,11 +12,27 @@ void afficherObjet(A* obj)
 
 int main()
 {
+    //de base le main est à faire dans ex1.cpp pour l'ex 1
+    //et ex2.cpp pour l'ex 2
     std::cout << "Hello World!\n";
-    B* obj1 = new B();
-    C* obj2 = new C();
-    afficherObjet(obj1);
-    afficherObjet(obj2);
+
+    //ex 1 :
+    CLa ex1a;
+    CLa* ex1b = new CLa(1, 2);
+    ex1a.setNb1(1);
+    ex1a.setNb2(2);
+    cout << ex1a.somme() << endl;
+    cout << ex1b->somme() << endl;
+    delete ex1b;
+
+    // ex 2:
+    B* ex2a = new B();
+    C* ex2b = new C();
+    afficherObjet(ex2a);
+    afficherObjet(ex2b);
+    //PAS DEMANDÉ MAIS IL FAUT LE FAIRE
+    delete ex2a;
+    delete ex2b;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
